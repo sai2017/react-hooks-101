@@ -24,13 +24,17 @@ const App = () => {
 
   // const divide3 = () => {
   //   if (count % 3 === 0) {
-  //     setCount(count / 3)
+  //     return setCount(count / 3)
+  //   } else {
+  //     return count
   //   }
   // }
 
   const divide3 = () => setCount((previousCount) => {
     if (previousCount % 3 === 0) {
-      setCount(previousCount / 3)
+      return setCount(previousCount / 3)
+    } else {
+      return previousCount
     }
   })
 
